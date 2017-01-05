@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using WrapLayoutCustomRender.Views;
 using Xamarin.Forms;
 
 namespace WrapLayoutCustomRender
@@ -13,7 +9,7 @@ namespace WrapLayoutCustomRender
         {
             InitializeComponent();
 
-            MainPage = new WrapLayoutCustomRender.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
